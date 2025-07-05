@@ -1,0 +1,22 @@
+<h1>login form</h1>
+<label for="username">username:</label>
+<input id="username" [(ngModel)]="username" type="text" placeholder="enter username" >
+<br>
+<br>
+<label for="password">Password:</label>
+<input id="'password" [(ngModel)]="pass" type="password" placeholder="enter password">
+<br>
+<br>
+
+
+<button (click)="check()">Login</button>
+<button (click)="showData()">Show Data</button>
+
+
+<div *ngIf="result===true">
+    <p style="color: green;">Login Successfull</p>
+</div>
+
+<div *ngIf="result===false">
+    <p style="color: red;">Login Failed</p>
+</div>

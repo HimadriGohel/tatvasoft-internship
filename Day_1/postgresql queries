@@ -1,0 +1,45 @@
+insert query in student table
+
+SELECT*FROM students;
+
+INSERT INTO students (student_id, student_name, student_course)
+VALUES(1,'RAHUL','BCA',20);
+
+INSERT INTO students (student_id, student_name, student_course)
+VALUES(2,'garima','IT',10);
+
+INSERT INTO students (student_id, student_name, student_course)
+VALUES(3,'charu','CE',6);
+
+
+update query in students table
+
+UPDATE students 
+SET student_name='hima', student_course='MCA' 
+WHERE student_id=3;
+
+delete query
+DELETE FROM students;
+
+
+order by query
+SELECT * FROM public.students
+ORDER BY student_id ASC;
+
+
+JOIN queries
+
+SELECT*FROM results;
+
+INSERT INTO results(student_id,student_marks,student_grades)
+VALUES(1,199,'AA'),(2,98,'AA'),(3,67,'BB');
+
+SELECT s.student_id,s.student_name,s.student_course,r.student_marks,r.student_grades FROM students s
+INNER JOIN results r ON s.student_id=r.student_id;
+
+SELECT s.student_id,s.student_name,s.student_course,r.student_marks,r.student_grades FROM students s
+RIGHT JOIN results r ON s.student_id=r.student_id;
+
+SELECT s.student_id,s.student_name,s.student_course,r.student_marks,r.student_grades FROM students s
+LEFT JOIN results r ON s.student_id=r.student_id;
+
