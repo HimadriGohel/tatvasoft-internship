@@ -1,13 +1,13 @@
-# 🌐 Tatvasoft Internship 
+# 🌐 Tatvasoft Internship
 
 Welcome to the official repository of the *15-day Online Summer Internship* organized by *TatvaSoft*.
 
 This internship project focuses on developing a full-stack web application using:
 
-- *Frontend*: Angular  
-- *Backend*: .NET (Web API, EF Core, LINQ)  
-- *Database*: PostgreSQL  
-- *Deployment*: AWS
+- **Frontend**: Angular  
+- **Backend**: .NET (Web API, EF Core, LINQ)  
+- **Database**: PostgreSQL  
+- **Deployment**: AWS
 
 ---
 
@@ -37,7 +37,7 @@ The internship was divided into daily tasks and modules:
 
 ## 🗂 Repository Structure
 
-
+```
 /Tatvasoft-Internship
 │
 ├── day_1/            # PostgreSQL Basics
@@ -50,4 +50,5 @@ The internship was divided into daily tasks and modules:
 ├── day_8/            # Mission Application CRUD
 ├── day_9/            # Profile Page + Deployment Prep
 ├── day_10/           # AWS Deployment
-└── README.md
+└── README.md
+```
